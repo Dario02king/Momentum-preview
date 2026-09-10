@@ -10,4 +10,8 @@ Built output only, for real-device visual QA of `Momentum-App` branch
 - The sourcemap is omitted for the same reason — it is not needed to look at
   the app.
 
+The files sit at the repository root, so **either** Pages source works:
+*Deploy from a branch* (`main`, `/ (root)`) or *GitHub Actions* (re-run the
+`Publish preview` workflow).
+
 Delete this repository once the review is done.
