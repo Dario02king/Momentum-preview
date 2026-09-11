@@ -4,7 +4,7 @@ Built output only, for real-device visual QA of `Momentum-App` branch
 `claude/momentum-pass-2-geometry-r2qzkd` before it is merged. No source, no
 history.
 
-- Built from commit `eea0c19` with `--base=/Momentum-preview/`.
+- Built from commit `2ee1738` with `--base=/Momentum-preview/`.
 - `sw.js` is deliberately **not** published: its precache list is generated
   for the production path and would be wrong here. Without it every load is
   fresh, which is what a visual review wants.
