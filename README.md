@@ -4,10 +4,14 @@ Built output only, for real-device visual QA of `Momentum-App` branch
 `claude/momentum-pass-2-geometry-r2qzkd` before it is merged. No source, no
 history.
 
-- Built from commit `d0d19a8` with `--base=/Momentum-preview/`.
-- `sw.js` is deliberately **not** published: its precache list is generated
-  for the production path and would be wrong here. Without it every load is
-  fresh, which is what a visual review wants.
+- Built from commit `75cf2a5` (Momentum-App, muscle-map release candidate; app source `5e554aa`) with `--base=/Momentum-preview/`, on 2026-09-11.
+- `sw.js` is deliberately **not** published. Its precache list now follows
+  the build's base, so it would be right here — but without it every load is
+  fresh, which is what a visual review wants. It also means the PWA/offline
+  path cannot be tried on this preview; that stays for the production site.
+- `models/momentum-body.glb` (467 KB) and the lazy `assets/BodyViewer-*.js`
+  chunk are published: the 3D body in Bereiche → Gym fetches both on first
+  entry.
 - The sourcemap is omitted for the same reason — it is not needed to look at
   the app.
 
